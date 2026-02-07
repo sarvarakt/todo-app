@@ -12,7 +12,7 @@ function addTask() {
         
         let span = document.createElement('span');
         span.innerHTML = "\u00d7";
-        li.appendChild(span); // <-- Tirnoqlar olib tashlandi
+        li.appendChild(span);
     }
     inputBox.value = "";
     saveData();
@@ -29,15 +29,12 @@ listContainer.addEventListener("click", function(e) {
     }
 }, false);
 
-// Ma'lumotni Local Storage-ga saqlash
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
 }
 
-// Sahifa yangilanganda ma'lumotni qayta chiqarish
 function showTask() {
     listContainer.innerHTML = localStorage.getItem("data");
 }
 
-// Funksiyani chaqirishni unutmang
 showTask();
