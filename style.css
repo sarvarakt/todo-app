@@ -44,6 +44,21 @@ body.dark-mode ul li {
     color: #ddd;
 }
 
+/* Bu kodni CSS-ning eng oxiriga qo'shing */
+body.dark-mode .row {
+    background: rgba(255, 255, 255, 0.1); /* Shaffof oq */
+    border-radius: 40px;
+}
+
+body.dark-mode .row input {
+    background: transparent; /* Fonni yuqoridagi .row dan oladi */
+    color: #fff;
+}
+
+body.dark-mode .row input::placeholder {
+    color: #bbb;
+}
+
 .container {
     width: 100%;
     min-height: 100vh;
