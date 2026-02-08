@@ -5,6 +5,45 @@
     box-sizing: border-box;
 }
 
+#theme-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; 
+    background: #ff5945;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#theme-btn:hover {
+    transform: rotate(30deg) scale(1.1);
+}
+
+body.dark-mode {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+
+body.dark-mode .todo-app {
+    background: #1b1b2f;
+    color: #fff;
+}
+
+body.dark-mode h2 {
+    color: #fff;
+}
+
+body.dark-mode ul li {
+    color: #ddd;
+}
+
 .container {
     width: 100%;
     min-height: 100vh;
@@ -13,6 +52,8 @@
 }
 
 .todo-app {
+    position: relative;
+    padding-top: 60px;
     width: 100%;
     max-width: 540px;
     background: #fff;
@@ -110,3 +151,5 @@ ul li span {
 ul li span:hover {
     background: #edeef0;
 }
+
+
